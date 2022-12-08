@@ -139,7 +139,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.Handle(pingv1connect.NewPingServiceHandler(
 		&PingServer{},
-		connect.WithCodec(grpc.Codec{}), // Add connect option to server
+		connect.WithCodec(grpc.Codec{}), // Add connect option to handler.
 	))
 	// handler serving ...
 
