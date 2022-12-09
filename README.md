@@ -122,7 +122,7 @@ protoc --go_out=. --go-vtproto_out=. --go-drpc_out=. --go-drpc_opt=protolib=gith
 ```
 
 ### Connect
-To use `vtprotobuf` with the buf connect protocol simply pass in `connect.WithCodec(grpc.Codec{})` as a connect handler or client option. 
+To use `vtprotobuf` with the buf connect protocol simply pass in `connect.WithCodec(grpc.Codec{})` as a connect option to handler and client constructors.
 
 ```go
 package main
